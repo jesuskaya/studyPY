@@ -1,0 +1,62 @@
+### main template
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Логи и временные файлы
+logs/
+*.log
+*.out
+*.err
+*.pid
+*.swp
+*.swo
+*.swn
+*.swd
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Виртуальное окружение
+venv/
+env/
+*.venv
+*.env
+
+# Flask и зависимости
+instance/
+*.sqlite3
+*.db
+config.py
+.env
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Node.js (если есть JS в проекте)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Компиляция C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Docker
+docker-compose.override.yml
+
