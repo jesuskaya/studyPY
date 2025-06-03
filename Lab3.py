@@ -124,3 +124,17 @@ if not df.empty:
     print(df.to_string(index=False))
 else:
     print("Немає правил, що задовольняють умови.")
+
+
+# Збереження виводу в файл
+with open('output.txt', 'w', encoding='utf-8') as f:
+    f.write("Часті набори:\n")
+    for k, itemsets in enumerate(frequent_itemsets, start=1):
+        f.write(f"{k}-елементні набори:\n")
+        for itemset, support in itemsets.items():
+            f.write(f"{set(itemset)}: підтримка = {support:.3f}\n")
+    f.write("\nАсоціативні правила:\n")
+    if not df.empty:
+        f.write(df.to_string(index=False))
+    else:
+        f.write("Немає правил, що задовольняють умови.")
